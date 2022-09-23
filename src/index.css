@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@100;400&family=Roboto&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@100;400;600&family=Roboto&display=swap');
 *{
   margin: 0;
   box-sizing: border-box;
@@ -18,21 +17,30 @@
   justify-content: center;
   align-items: center;
   padding: 10px 0px 10px;
-  border-bottom:  1px solid white ;
+  border-bottom:  1px solid rgba(255, 255, 255, 0.511);
+  font-family: Poppins, sans-serif;
+  gap: 30px;
 }
 
 .logo-container{
   padding: 20px;
-  /* border-right: 2px solid white; */
-  /* margin-right: auto; */
 }
 .logo-container img{
   width: 120px;
   height: 50px;
 }
 .header-container .line{
-  width: 2px !important;
+  width: 2px ;
   height: 90%;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.511);
   z-index: 2000;
+}
+.nav-links-container {
+  display: flex;
+  gap: 15px;
+}
+.nav-links-container a{
+  text-decoration: none;
+  color: #1B1D21;
+  font-weight: 600;
 }
