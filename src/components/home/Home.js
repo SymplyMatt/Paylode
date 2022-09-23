@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import ImageBg from "./ImageBg";
 import About from "./About";
 import SectionOne from "./SectionOne";
+import SectionTwo from "./SectionTwo";
 const Home = () => {
   useEffect(() => {
     document.title = "Home || PayloadWeb";
@@ -15,6 +16,7 @@ const Home = () => {
       <div className="scroll"><img src="images/scroll-icon.png" alt="" /></div>
       <About />
       <SectionOne />
+      <SectionTwo />
     </>
   );
 };

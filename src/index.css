@@ -12,7 +12,7 @@
 }
 /* Nav links */
 .header-container{
-  height: 80px;
+  height: 85px;
   width: 100%;
   margin: auto;
   display: flex;
@@ -260,7 +260,7 @@
 /* About */
 .about{
   display: flex;
-  width: 80%;
+  width: 85%;
   margin: auto;
   flex-direction:column ;
 }
@@ -299,7 +299,7 @@
 .section-one{
   justify-content: center;
   align-items: center;
-  width: 80%;
+  width: 85%;
   display: flex;
   flex-direction: column;
   margin: auto;
@@ -378,4 +378,82 @@
   width: 100%;
   background-color: rgba(255, 255, 255, 0.511);
   color: rgba(255, 255, 255, 0.511);
+}
+
+
+/* Section two */
+.section-two{
+  width: 85%;
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.left-flex,.left-flex-two{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.left-flex-two .item{
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  gap: 20px;
+}
+.item-flex{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  /* align-items: center; */
+  margin: auto;
+}
+.section-two-title{
+  text-align: left;
+  font-size: 22px;
+  line-height: 32px;
+  font-weight: 700;
+  color: #15497e;
+  font-family: Poppins,sans-serif;
+}
+.section-two-desc{
+  display: block;
+  font-size: 14px;
+  line-height: 177%;
+  color: #15497e99;
+  padding-right: 5em;
+  padding-top: 0.5em;
+  font-family: Poppins,sans-serif;
+  font-weight: 700;
+}
+.section-two h2 {
+  text-align: left;
+  line-height: 60px;
+  font-family: Libre Baskerville, serif;
+  font-size: 42px;
+  color: #15497e;
+  /* max-width: 600px; */
+  font-weight: 400;
+}
+
+.section-two h2 span {
+  background: #e0ffaf;
+  padding: 0px 10px;
+}
+.section-two-img img{
+  width: 85px;
+  height: 85px;
+}
+.section-two-right-bg{
+  background: url(family.png);
+  height: 450px;
+  border-radius: 10px;
+  background-repeat: no-repeat !important;
+  background-size: cover !important;
+  background-position: 50% !important;
 }
