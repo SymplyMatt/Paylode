@@ -95,3 +95,84 @@
 
 
 /* End of Nav links and Logo */
+
+/* Main Hero  */
+.main-hero-container{
+  font-family: 'Libre Baskerville', Poppins;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 80px);
+  gap: 15px;
+}
+.main-hero-container h1{
+  font-size: 60px;
+  text-align: center;
+  line-height: 81px;
+  font-weight: 400;
+  color: #212529;
+}
+.big-text{
+  padding: 20px;
+}
+.main-hero-container span {
+  background: #9CD543;
+  padding: 0px 10px;
+}
+.main-hero-container p{
+  font-size: 18px;
+  color: #15497E;
+  max-width: 500px;
+  text-align: center;
+  font-weight: 400;
+  line-height: 1.5;
+}
+.main-hero-container .btn-hero{
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-family: Poppins,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 15px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  min-height: 40px;
+  background: #3ab75d;
+  color: #fff;
+  font-size: 14px;
+}
+.main-hero-container .main-hero-buttons{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.main-hero-container .play-icon{
+  height: 50px;
+  width: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff;
+  border: 1px solid #8e8c957a;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.main-hero-container .play-icon i{
+  color: #3ab75d;
+}
