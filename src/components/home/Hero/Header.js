@@ -1,15 +1,13 @@
 import React from "react";
+import Logo from "./header/Logo";
+import Nav from "./header/Nav";
 
 const Header = () => {
     return <div className='header-container'>
-        <div className="logo-container"><img src="images/paylode-logo.png" alt="" /></div>
+        <Logo />
         <div className="line"></div>
-        <div className="nav-links-container">
-            <a href="">Why Paylode</a>
-            <a href="">Pricing</a>
-            <a href="">For Developers</a>
-            <a href="">Support</a>
-        </div>
+        <Nav />
+        
   </div>;
 };
 
