@@ -653,3 +653,77 @@ html {
 .footer a{
   text-decoration: none;
 }
+
+/* Section-four */
+.section-four .content .community {
+  position: relative;
+  background-image: url(spiral.png);
+  padding: 16em 4em 14em;
+  background-position: 50%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.section-four .content .community:before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: -5em;
+  background: url(community.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 50%;
+}
+.section-four .content .center {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-items: center !important;
+  flex-direction: column !important;
+}
+.section-four .content .title-lg {
+  font-size: 42px;
+  line-height: 58px;
+  font-family: Libre Baskerville, serif;
+  max-width: 700px;
+  text-align: center;
+}
+.button-1 {
+  background-color: #EA4C89;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  background-color: #3ab75d;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 50px;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: color 100ms;
+  vertical-align: baseline;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  font-family: Poppins,sans-serif;
+  width: 150px;
+}
+
+/* 
+@media (min-width:1000px) {
+
+} */

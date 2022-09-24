@@ -7,6 +7,7 @@ import SectionOne from "./SectionOne";
 import SectionTwo from "./SectionTwo";
 import SectionThree from "./SectionThree";
 import Footer from "./Footer";
+import SectionFour from "./SectionFour";
 const Home = () => {
   useEffect(() => {
     document.title = "Home || PayloadWeb";
@@ -20,6 +21,7 @@ const Home = () => {
       <SectionOne />
       <SectionTwo />
       <SectionThree />
+      <SectionFour />
       <Footer />
     </>
   );
