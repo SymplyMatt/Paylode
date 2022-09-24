@@ -723,7 +723,17 @@ html {
   width: 150px;
 }
 
-/* 
-@media (min-width:1000px) {
+/* Responsive design */
 
-} */
+@media (max-width:1100px) {
+.header-container {
+  display: none;
+}
+.section-three-flex-two .num {
+  font-size: 25px;
+}
+
+.section-three-flex-two .title {
+  font-size: 24px;
+}
+}
