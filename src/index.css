@@ -1208,6 +1208,10 @@ background-position: 50%;
   justify-content: center;
   align-items: center;
   gap: 10px;
+  z-index: 10000;
+  box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.15);
 }
 .login-container .languages .item{
   font-size: 14px;
@@ -1346,4 +1350,67 @@ background-position: 50%;
 .login-container .new-account{
   color: #808191;
   font-size: 14px;
+}
+@media (max-width:700px) {
+  .input-one-container,
+    .input-two-container {
+      width: 400px;
+    }
+}
+@media (max-width:550px) {
+  .input-one-container,
+    .input-two-container {
+      width: 380px;
+    }
+}
+@media (max-width:500px) {
+  .input-one-container,
+    .input-two-container {
+      width: 300px;
+    }
+}
+@media (max-width:470px) {
+
+  .input-one-container,
+  .input-two-container {
+    width: 280px;
+  }
+  .login-container .form-container{
+    padding: 4em 16px 2em 16px;
+    margin:80px 20px 20px 20px;
+}
+  
+}
+@media (max-width:400px) {
+
+  .input-one-container,
+  .input-two-container {
+    width: 300px;
+  }
+  .login-container .form-container{
+    padding: 4em 10px 2em 10px;
+}
+  
+}
+@media (max-width:370px) {
+
+  .input-one-container,
+  .input-two-container {
+    width: 300px;
+  }
+  .login-container .form-container{
+    padding: 4em 10px 2em 10px;
+}
+  
+}
+@media (max-width:350px) {
+
+  .input-one-container,
+  .input-two-container {
+    width: 250px;
+  }
+  .login-container .form-container{
+    padding: 4em 10px 2em 10px;
+}
+  
 }
