@@ -8,15 +8,21 @@ import SectionTwo from "./SectionTwo";
 import SectionThree from "./SectionThree";
 import Footer from "./Footer";
 import SectionFour from "./SectionFour";
+import Hamburger from "./Hero/header/Hamburger";
 const Home = () => {
   useEffect(() => {
     document.title = "Home || PayloadWeb";
   });
   return (
     <>
+      <Hamburger />
       <Hero />
       <ImageBg />
-      <a href="#about"><div className="scroll"><img src="images/scroll-icon.png" alt="" /></div></a>
+      <a href='#about'>
+        <div className='scroll'>
+          <img src='images/scroll-icon.png' alt='' />
+        </div>
+      </a>
       <About />
       <SectionOne />
       <SectionTwo />

@@ -7,7 +7,7 @@ const Buttons = () => {
         Create Free Account
       </a>
       <div className='play-icon'>
-        <i class='fa-solid fa-play'></i>
+        <i className='fa-solid fa-play'></i>
       </div>
     </div>
   );

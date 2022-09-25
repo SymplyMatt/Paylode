@@ -6,7 +6,7 @@ const SectionOneGrid = ({ title, desc, num }) => {
       <div className='blue-bg'>
         <p className='title'>{title}</p>
         <p className='description'>{desc}</p>
-        <i class='fa-solid fa-arrow-right'></i>
+        <i className='fa-solid fa-arrow-right'></i>
       </div>
       <h1>{num}</h1>
     </div>
