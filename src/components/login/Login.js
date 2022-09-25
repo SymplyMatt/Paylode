@@ -1,13 +1,18 @@
 import React from "react";
 import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
+import { useEffect } from "react";
 
-const Login = () => {
+const Login = ([page, setPage]) => {
   const navigate = useNavigate();
   const [textMode, setTextMode] = useState(false);
   const firstInput = useRef(null);
   const secondInput = useRef(null);
   const [showOverlay, setShowOverlay] = useState(false);
+  useEffect(() => {
+    document.title = "Login || PayloadWeb";
+    setPage("login");
+  });
   return (
     <div className='login-container'>
       <div className='language'>

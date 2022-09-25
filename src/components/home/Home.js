@@ -9,9 +9,10 @@ import SectionThree from "./SectionThree";
 import Footer from "./Footer";
 import SectionFour from "./SectionFour";
 import Hamburger from "./Hero/header/Hamburger";
-const Home = () => {
+const Home = ({ page, setPage }) => {
   useEffect(() => {
     document.title = "Home || PayloadWeb";
+    setPage("home");
   });
   return (
     <>
