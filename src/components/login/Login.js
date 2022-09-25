@@ -23,18 +23,18 @@ const Login = () => {
                     </div> 
                     <div className="input-one-container" onClick={()=>firstInput.current.focus()}>
                         <div className="at">@</div>
-                        <input type="text" placeholder="Work email address" ref={ firstInput}/>
+                        <input type="text" placeholder="Work email address" ref={ firstInput} className='input-box'/>
                     </div> 
                     <div className="input-two-container" onClick={()=>secondInput.current.focus()}>
                         <i className="fa-solid fa-lock lock"></i>
-                        <input type={`${textMode ? 'text' : 'password'}`} placeholder="Enter password" ref={ secondInput}/>
+                        <input type={`${textMode ? 'text' : 'password'}`} placeholder="Enter password" ref={ secondInput} className='input-box'/>
                         {!textMode && <i className="fa-solid fa-eye-slash eye-icon" onClick={() => setTextMode(true)}></i>}
                         {textMode && <i className="fa-solid fa-eye eye-icon" onClick={()=>setTextMode(false)}></i>}
                     </div> 
                     <div className="links">
                         <div className="checkbox">
-                            <div><input type="checkbox" name="" id="checkbox" /></div>
-                            <div className="">Remember Me</div>
+                            <input type="checkbox" name="" id="checkbox" />
+                            <div className="remember-text">Remember Me</div>
                         </div>
                         <a href=""><div className="forgot-password">Forgot your credentials?</div></a>
                     </div> 
