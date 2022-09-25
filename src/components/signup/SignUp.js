@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 import StepOne from "./StepOne";
 import StepTwo from "./StepTwo";
 import { useEffect } from "react";
+import BackToLogin from "./BackToLogin";
+import StepButton from "./StepButton";
+import FormTitle from "./FormTitle";
+import AccountSettings from "../account-settings/AccountSettings";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -35,10 +39,7 @@ const SignUp = () => {
 
       <div className='form-container create-account'>
         <form action=''>
-          <div className='title'>
-            <h2>{step == 1 ? "Create account" : "One more thing please.."}</h2>
-            <div className='sub-title'>Create an account to continue!</div>
-          </div>
+          {step < 3 && <FormTitle step={step} />}
           {step == 1 && (
             <StepOne
               mode={mode}
@@ -65,23 +66,9 @@ const SignUp = () => {
               setBusinessType={setBusinessType}
             />
           )}
-          <a href='' className='link-btn'>
-            <div
-              className=''
-              onClick={(e) => {
-                e.preventDefault();
-                setStep(2);
-              }}
-            >
-              {step == 1 ? "Create my account" : "Proceed"}
-            </div>
-          </a>
-          {step == 1 && (
-            <div className='new-account'>
-              Already have an account?
-              <span onClick={() => navigate("/login")}>Sign In </span>
-            </div>
-          )}
+          {step == 3 && <AccountSettings />}
+          {step < 3 && <StepButton step={step} setStep={setStep} />}
+          {step == 1 && <BackToLogin />}
         </form>
       </div>
     </div>
