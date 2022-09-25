@@ -1,35 +1,47 @@
 import React from "react";
+import { useState,useRef } from "react";
 
 const Login = () => {
+    const [textMode, setTextMode] = useState(false);
+    const firstInput = useRef(null);
+    const secondInput = useRef(null);
+    const [showOverlay, setShowOverlay] = useState(false);
     return (
         <div className="login-container">
+            <div className="language">
+                <div className="mode" onClick={()=>setShowOverlay(!showOverlay)}>English (UK) <i className="fa-solid fa-angle-down"></i></div>
+                <div className={`languages ${!showOverlay && 'hide-overlay'}`}>
+                    <div className="item">English (US) </div>
+                    <div className="item">French (FR)</div>
+                </div>
+            </div>
             <div className="form-container">
                 <form action="">
                     <div className="title">
                         <h2>Login</h2>
                         <div className="sub-title">Welcome back we missed you</div> 
                     </div> 
-                    <div className="input-one-container">
-                        <div className="">@</div>
-                        <input type="text" />
+                    <div className="input-one-container" onClick={()=>firstInput.current.focus()}>
+                        <div className="at">@</div>
+                        <input type="text" placeholder="Work email address" ref={ firstInput}/>
                     </div> 
-                    <div className="input-two-container">
-                        <i className="fa-solid fa-lock"></i>
-                        <input type="text" />
-                        <i className="fa-solid fa-eye-slash"></i>
+                    <div className="input-two-container" onClick={()=>secondInput.current.focus()}>
+                        <i className="fa-solid fa-lock lock"></i>
+                        <input type={`${textMode ? 'text' : 'password'}`} placeholder="Enter password" ref={ secondInput}/>
+                        {!textMode && <i className="fa-solid fa-eye-slash eye-icon" onClick={() => setTextMode(true)}></i>}
+                        {textMode && <i className="fa-solid fa-eye eye-icon" onClick={()=>setTextMode(false)}></i>}
                     </div> 
-                    <div className="">
-                        <div className="">
-                            <input type="checkbox" name="" id="" />
+                    <div className="links">
+                        <div className="checkbox">
+                            <div><input type="checkbox" name="" id="checkbox" /></div>
                             <div className="">Remember Me</div>
                         </div>
-                        <div className="">Forgot your credentials?</div>
+                        <a href=""><div className="forgot-password">Forgot your credentials?</div></a>
                     </div> 
-                    <a href=""><div className="">Login to your Account</div></a> 
-                    <div className="">Dont have an account? <span> Create an account </span></div> 
+                    <a href=""className="link-btn"><div className="">Login to your Account</div></a> 
+                    <div className="new-account">Dont have an account? <span> Create an account </span></div> 
                 </form>
             </div>
-            
         </div>
     )
 };
