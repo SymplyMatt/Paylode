@@ -1351,12 +1351,19 @@ background-position: 50%;
   color: #808191;
   font-size: 14px;
 }
+.login-container .new-account span{
+  color: #0d6efd;
+}
+
+
 @media (max-width:700px) {
   .input-one-container,
     .input-two-container {
       width: 400px;
     }
 }
+
+
 @media (max-width:550px) {
   .input-one-container,
     .input-two-container {
