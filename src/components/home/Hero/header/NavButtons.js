@@ -10,7 +10,7 @@ const NavButtons = () => {
         className='btn btn-1'
         onClick={(e) => {
           e.preventDefault();
-          navigate("/auth/login");
+          navigate("/login");
         }}
       >
         Merchant Login
@@ -20,7 +20,7 @@ const NavButtons = () => {
         className='btn btn-2'
         onClick={(e) => {
           e.preventDefault();
-          navigate("/auth/signup");
+          navigate("/signup");
         }}
       >
         Create Free Account

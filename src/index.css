@@ -1255,7 +1255,7 @@ background-position: 50%;
 }
 .login-container .form-container h2, .mode-sm .mode-text{
   text-align: center;
-  color: #323b4b;
+  color: #154973;
   font-weight: 700;
   line-height: 29px;
   text-align: center;
@@ -1500,4 +1500,60 @@ background-position: 50%;
   .mode-sm{
     display: flex;
   }
+}
+
+
+.step-2-flex{
+  display: flex;
+  flex-direction: column;
+  /* justify-self: flex-start; */
+  align-self: flex-start;
+  margin-bottom: 20px;
+}
+.step-2-flex-title{
+  font-size: 16px;
+  font-family: Libre Baskerville, serif;
+  line-height: 1.5;
+  color: #212529;
+  margin-bottom: 20px;
+}
+.step-2-flex .type-container{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: left;
+  gap: 15px;
+  cursor: pointer;
+}
+.circle-container {
+  padding: 10px;
+  border-radius: 50%;
+}
+.circle-container.active {
+  background-color: #3ab75d53;
+}
+.step-2-flex .type-container .circle i{
+  color: #3ab75d;
+}
+.business-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+.business-item .title {
+text-align: left;
+font-family: Roboto, sans-serif;
+color: #808191;
+position: relative;
+top: 10px;
+
+}
+.business-item .desc {
+font-size: 14px;
+font-family: Roboto, sans-serif;
+text-align: left;
+color: #808191;
+position: relative;
+top: -10px;
 }
