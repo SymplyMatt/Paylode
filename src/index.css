@@ -794,7 +794,9 @@ html {
   height: 50px;
   opacity: 0;
 }
-
+.pointer{
+  cursor: pointer;
+}
 .menu-wrap .hamburger {
   position: absolute; 
    top: 0;
@@ -1286,26 +1288,36 @@ background-position: 50%;
   gap: 20px;
   font-family: Roboto;
   height: 55px;
-  width: 100%;
+  width: 100% !important;
   font-size: 18px;
   min-width: 280px;
 }
+.step-four-container .input-one-container{
+  min-width: 220px;
+}
 .input-one-container:hover,
-.input-two-container:hover {
+.input-two-container:hover,.step-four-container .input-box:hover {
   border: 1px solid #198754;
 }
 .at , .lock, .eye-icon{
   opacity: 0.7;
 }
-.login-container .input-box{
+.login-container .input-box, .input-box{
   border: none;
   width: 90%;
   font-family: Roboto;
   font-size: 18px;
   color: #808191;
 }
-.login-container .input-box:focus {
+.input-box.full{
+  width: 100% !important;
+  /* max-width: 280px; */
+}
+.input-box.full:hover{
   outline: none;
+}
+.input-box:focus, .step-four-container .input-box:focus {
+  outline: none !important;
 }
 .login-container .links {
   display: flex;
@@ -1725,6 +1737,45 @@ font-size: 16px;
   height: 100%;
   width: 2px;
   background-color:  #808191;
+}
+.btn-step {
+  appearance: none;
+  background-color: #2ea44f;
+  border: 1px solid rgba(27, 31, 35, .15);
+  border-radius: 6px;
+  box-shadow: rgba(27, 31, 35, .1) 0 1px 0;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: -apple-system, system-ui, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  padding: 6px 16px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: middle;
+  white-space: nowrap;
+  max-width: 130px;
+  height: 40px;
+}
+.btn-step.lg{
+  width: 125px;
+}
+.btn-step.brown{
+  background-color: #a9a5af;
+}
+.btn-flex.registration{
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media (max-width:850px) {

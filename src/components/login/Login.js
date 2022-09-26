@@ -3,7 +3,7 @@ import { useState, useRef } from "react";
 import { useNavigate } from "react-router-dom";
 import { useEffect } from "react";
 
-const Login = ([page, setPage]) => {
+const Login = ({ page, setPage }) => {
   const navigate = useNavigate();
   const [textMode, setTextMode] = useState(false);
   const firstInput = useRef(null);
@@ -55,13 +55,13 @@ const Login = ([page, setPage]) => {
             />
             {!textMode && (
               <i
-                className='fa-solid fa-eye-slash eye-icon'
+                className='fa-solid fa-eye-slash eye-icon pointer'
                 onClick={() => setTextMode(true)}
               ></i>
             )}
             {textMode && (
               <i
-                className='fa-solid fa-eye eye-icon'
+                className='fa-solid fa-eye eye-icon pointer'
                 onClick={() => setTextMode(false)}
               ></i>
             )}
@@ -78,9 +78,9 @@ const Login = ([page, setPage]) => {
           <a href='' className='link-btn'>
             <div className=''>Login to your Account</div>
           </a>
-          <div className='new-account'>
-            Dont have an account?{" "}
-            <span onClick={() => navigate("/signup")}>Create an account</span>
+          <div className='new-account pointer'>
+            Dont have an account?
+            <span onClick={() => navigate("/signup")}> Create an account</span>
           </div>
         </form>
       </div>

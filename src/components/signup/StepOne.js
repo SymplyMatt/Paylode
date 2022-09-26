@@ -16,7 +16,7 @@ const StepOne = ({
       <>
         <div className='mode account-mode'>
           <div
-            className='item'
+            className='item pointer'
             onClick={() => {
               setMode("business");
             }}
@@ -27,7 +27,7 @@ const StepOne = ({
             <hr className={`${mode == "business" && "active"}`} />
           </div>
           <div
-            className='item'
+            className='item pointer'
             onClick={() => {
               setMode("developers");
             }}
@@ -51,7 +51,7 @@ const StepOne = ({
               }`}
             ></i>
           </div>
-          <div className='mode-text'>
+          <div className='mode-text pointer'>
             {`${mode == "business" ? "Business Owner" : "Softare Developers"}`}
             <hr />
           </div>
@@ -110,13 +110,13 @@ const StepOne = ({
         />
         {!textMode && (
           <i
-            className='fa-solid fa-eye-slash eye-icon'
+            className='fa-solid fa-eye-slash eye-icon pointer'
             onClick={() => setTextMode(true)}
           ></i>
         )}
         {textMode && (
           <i
-            className='fa-solid fa-eye eye-icon'
+            className='fa-solid fa-eye eye-icon pointer'
             onClick={() => setTextMode(false)}
           ></i>
         )}

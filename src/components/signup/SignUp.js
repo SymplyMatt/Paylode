@@ -35,7 +35,7 @@ const SignUp = () => {
         />
         <div className='form-container create-account'>
           <form action=''>
-            {step < 3 && <FormTitle step={step} />}
+            <FormTitle step={step} />
             {step == 1 && (
               <StepOne
                 mode={mode}
