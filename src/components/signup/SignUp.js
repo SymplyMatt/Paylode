@@ -8,6 +8,7 @@ import BackToLogin from "./BackToLogin";
 import StepButton from "./StepButton";
 import FormTitle from "./FormTitle";
 import AccountSettings from "../account-settings/AccountSettings";
+import LanguageMode from "./LanguageMode";
 
 const SignUp = () => {
   const navigate = useNavigate();
@@ -26,52 +27,47 @@ const SignUp = () => {
     document.title = "SignUp || PayloadWeb";
   });
   return (
-    <div className='login-container'>
-      <div className='language'>
-        <div className='mode' onClick={() => setShowOverlay(!showOverlay)}>
-          English (UK) <i className='fa-solid fa-angle-down'></i>
-        </div>
-        <div className={`languages ${!showOverlay && "hide-overlay"}`}>
-          <div className='item'>English (US) </div>
-          <div className='item'>French (FR)</div>
+    <>
+      <div className='login-container'>
+        <LanguageMode
+          showOverlay={showOverlay}
+          setShowOverlay={setShowOverlay}
+        />
+        <div className='form-container create-account'>
+          <form action=''>
+            {step < 3 && <FormTitle step={step} />}
+            {step == 1 && (
+              <StepOne
+                mode={mode}
+                setMode={setMode}
+                setStep={setStep}
+                step={step}
+                firstInput={firstInput}
+                secondInput={secondInput}
+                thirdInput={thirdInput}
+                textMode={setTextMode}
+              />
+            )}
+            {step == 2 && (
+              <StepTwo
+                mode={mode}
+                setMode={setMode}
+                setStep={setStep}
+                step={step}
+                fourthInput={fourthInput}
+                fifthInput={fifthInput}
+                sixthInput={sixthInput}
+                textMode={setTextMode}
+                businessType={businessType}
+                setBusinessType={setBusinessType}
+              />
+            )}
+            {step < 3 && <StepButton step={step} setStep={setStep} />}
+            {step == 1 && <BackToLogin />}
+          </form>
         </div>
       </div>
-
-      <div className='form-container create-account'>
-        <form action=''>
-          {step < 3 && <FormTitle step={step} />}
-          {step == 1 && (
-            <StepOne
-              mode={mode}
-              setMode={setMode}
-              setStep={setStep}
-              step={step}
-              firstInput={firstInput}
-              secondInput={secondInput}
-              thirdInput={thirdInput}
-              textMode={setTextMode}
-            />
-          )}
-          {step == 2 && (
-            <StepTwo
-              mode={mode}
-              setMode={setMode}
-              setStep={setStep}
-              step={step}
-              fourthInput={fourthInput}
-              fifthInput={fifthInput}
-              sixthInput={sixthInput}
-              textMode={setTextMode}
-              businessType={businessType}
-              setBusinessType={setBusinessType}
-            />
-          )}
-          {step == 3 && <AccountSettings />}
-          {step < 3 && <StepButton step={step} setStep={setStep} />}
-          {step == 1 && <BackToLogin />}
-        </form>
-      </div>
-    </div>
+    </>
   );
 };
 
