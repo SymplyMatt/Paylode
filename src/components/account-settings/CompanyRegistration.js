@@ -39,6 +39,9 @@ const CompanyRegistration = ({mode, setMode}) => {
               className='input-box full'
             />
           </div>
+          <div className="upload-document">
+            <input type="file" name="" id="" />
+          </div>
             <div className="btn-flex registration">
                   <a href='' className='btn-step lg brown' onClick={(e) => {
                       e.preventDefault();
@@ -47,7 +50,7 @@ const CompanyRegistration = ({mode, setMode}) => {
                 <a href='' className='btn-step lg' onClick={(e) => {
                       e.preventDefault();
                       setMode('bank-account');
-                }}>Next Step</a>
+                }}>Update & Save</a>
             </div>  
         </div>
     </>
