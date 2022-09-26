@@ -23,12 +23,17 @@ const BusinessInfo = ({ mode, setMode }) => {
     <>
       <div className='header business-info-container'>
         <div className='title'>Business Information</div>
-        <div className="flex upload">
-            <div className="upload-icon"><input type="file" name="" id="" /></div>
-            <div className="">
-                <div className="desc">Company Logo</div>
-                <div className="desc sm">Upload a logo as your company identity, must be of size (512px x 512px) and less than 500KB</div>
+        <div className='flex upload'>
+          <div className='upload-icon'>
+            <input type='file' name='' id='' />
+          </div>
+          <div className=''>
+            <div className='desc'>Company Logo</div>
+            <div className='desc sm'>
+              Upload a logo as your company identity, must be of size (512px x
+              512px) and less than 500KB
             </div>
+          </div>
         </div>
         <div className='input-one-container'>
           <select name='' id='' className='input-box full'>
@@ -69,31 +74,31 @@ const BusinessInfo = ({ mode, setMode }) => {
           />
         </div>
         <div className='desc'>Company Address</div>
-        <div className="">
-            <div className="flex">
-                <div className='input-one-container'>
-                    <select name='' id='' className='input-box full'>
-                        <option value=''>Country</option>
-                    </select>
-                </div>
-                <div className='input-one-container'>
-                    <select name='' id='' className='input-box full'>
-                        <option value=''>State</option>
-                    </select>
-                </div>
+        <div className=''>
+          <div className='flex'>
+            <div className='input-one-container'>
+              <select name='' id='' className='input-box full'>
+                <option value=''>Country</option>
+              </select>
             </div>
-            <div className="flex">
-                <div className='input-one-container'>
-                    <select name='' id='' className='input-box full'>
-                        <option value=''>L.G.A</option>
-                    </select>
-                </div>
-                <div className='input-one-container'>
-                    <select name='' id='' className='input-box full'>
-                        <option value=''>Address Line</option>
-                    </select>
-                </div>
+            <div className='input-one-container'>
+              <select name='' id='' className='input-box full'>
+                <option value=''>State</option>
+              </select>
             </div>
+          </div>
+          <div className='flex'>
+            <div className='input-one-container'>
+              <select name='' id='' className='input-box full'>
+                <option value=''>L.G.A</option>
+              </select>
+            </div>
+            <div className='input-one-container'>
+              <select name='' id='' className='input-box full'>
+                <option value=''>Address Line</option>
+              </select>
+            </div>
+          </div>
         </div>
         <div className='btn-flex registration'>
           <a
@@ -111,7 +116,7 @@ const BusinessInfo = ({ mode, setMode }) => {
             className='btn-step lg'
             onClick={(e) => {
               e.preventDefault();
-              setMode("businesss-info");
+              // setMode("businesss-info");
             }}
           >
             Update & Save
