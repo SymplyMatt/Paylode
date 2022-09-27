@@ -5,6 +5,12 @@ import SignUp from "./components/signup/SignUp";
 import { useState } from "react";
 import AccountSettings from "./components/account-settings/AccountSettings";
 import Dashboard from "./components/dashboard/Dashboard";
+import Transfer from "./components/transfer/Transfer";
+import Wallet from "./components/wallet/Wallet";
+import Payments from "./components/payments/Payments";
+import Transactions from "./components/transactions/Transactions";
+import Invoicing from "./components/invoicing/Invoicing";
+import Customers from "./components/customers/Customers";
 
 function App() {
   const [page, setPage] = useState();
@@ -27,6 +33,84 @@ function App() {
           path='/dashboard'
           element={
             <Dashboard
+              showNav={showNav}
+              setShowNav={setShowNav}
+              showNotifications={showNotifications}
+              setShowNotifications={setShowNotifications}
+              page={page}
+              setPage={setPage}
+            />
+          }
+        />
+        <Route
+          path='/transfer'
+          element={
+            <Transfer
+              showNav={showNav}
+              setShowNav={setShowNav}
+              showNotifications={showNotifications}
+              setShowNotifications={setShowNotifications}
+              page={page}
+              setPage={setPage}
+            />
+          }
+        />
+        <Route
+          path='/wallet'
+          element={
+            <Wallet
+              showNav={showNav}
+              setShowNav={setShowNav}
+              showNotifications={showNotifications}
+              setShowNotifications={setShowNotifications}
+              page={page}
+              setPage={setPage}
+            />
+          }
+        />
+        <Route
+          path='/payments'
+          element={
+            <Payments
+              showNav={showNav}
+              setShowNav={setShowNav}
+              showNotifications={showNotifications}
+              setShowNotifications={setShowNotifications}
+              page={page}
+              setPage={setPage}
+            />
+          }
+        />
+        <Route
+          path='/transactions'
+          element={
+            <Transactions
+              showNav={showNav}
+              setShowNav={setShowNav}
+              showNotifications={showNotifications}
+              setShowNotifications={setShowNotifications}
+              page={page}
+              setPage={setPage}
+            />
+          }
+        />
+        <Route
+          path='/customers'
+          element={
+            <Customers
+              showNav={showNav}
+              setShowNav={setShowNav}
+              showNotifications={showNotifications}
+              setShowNotifications={setShowNotifications}
+              page={page}
+              setPage={setPage}
+            />
+          }
+        />
+        <Route
+          path='/invoicing'
+          element={
+            <Invoicing
               showNav={showNav}
               setShowNav={setShowNav}
               showNotifications={showNotifications}
