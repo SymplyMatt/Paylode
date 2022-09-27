@@ -15,7 +15,7 @@ const Dashboard = ({ showNav, setShowNav, showNotifications, setShowNotification
         <div className={`flex-row width-100 ${showNotifications && 'hide-main'}`}>
             <SideBar page={page} setPage={setPage}/>
             <MainContent showNav={showNav} setShowNav={setShowNav} showNotifications={showNotifications} setShowNotifications={setShowNotifications}/>
-            <DashboardHamburger showNav={showNav} setShowNav={setShowNav}/>
+            <DashboardHamburger showNav={showNav} setShowNav={setShowNav} page={ page} setPage={setPage} />
         </div>
         <Notifications showNotifications={showNotifications} setShowNotifications={setShowNotifications}/>
     </div>

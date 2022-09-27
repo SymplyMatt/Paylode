@@ -27,7 +27,12 @@ const Transfer = ({
           showNotifications={showNotifications}
           setShowNotifications={setShowNotifications}
         />
-        <DashboardHamburger showNav={showNav} setShowNav={setShowNav} />
+        <DashboardHamburger
+          showNav={showNav}
+          setShowNav={setShowNav}
+          page={page}
+          setPage={setPage}
+        />
       </div>
       <Notifications
         showNotifications={showNotifications}
