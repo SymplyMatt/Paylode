@@ -4,8 +4,10 @@ import { useRef } from "react";
 import { useEffect } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import { useNavigate } from "react-router-dom";
 
 const BusinessInfo = ({ mode, setMode }) => {
+  const navigate = useNavigate();
   const [input1, setInput1] = useState("");
   const [input2, setInput2] = useState("");
   const [input3, setInput3] = useState("");
@@ -116,7 +118,7 @@ const BusinessInfo = ({ mode, setMode }) => {
             className='btn-step lg'
             onClick={(e) => {
               e.preventDefault();
-              // setMode("businesss-info");
+              navigate("/dashboard");
             }}
           >
             Update & Save

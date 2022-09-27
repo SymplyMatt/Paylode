@@ -75,7 +75,14 @@ const Login = ({ page, setPage }) => {
               <div className='forgot-password'>Forgot your credentials?</div>
             </a>
           </div>
-          <a href='' className='link-btn'>
+          <a
+            href=''
+            className='link-btn'
+            onClick={(e) => {
+              e.preventDefault();
+              navigate("/dashboard");
+            }}
+          >
             <div className=''>Login to your Account</div>
           </a>
           <div className='new-account pointer'>
