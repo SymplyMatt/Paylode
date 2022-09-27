@@ -31,6 +31,8 @@ function App() {
               setShowNav={setShowNav}
               showNotifications={showNotifications}
               setShowNotifications={setShowNotifications}
+              page={page}
+              setPage={setPage}
             />
           }
         />
