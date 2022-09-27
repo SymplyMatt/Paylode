@@ -4,7 +4,7 @@ const Notifications = ({showNotifications, setShowNotifications}) => {
     return(
         <>
         <div className={`black-overlay ${!showNotifications && 'hide-nav'}`}></div>
-        <div className={`flex-column notifications-overlay overflow-hidden ${!showNotifications && 'hide-nav'}`}>
+        <div className={`flex-column notifications-overlay  ${!showNotifications ? 'hide-notifications-nav': 'show-notifications-menu'} `}>
         <div className="notifications-title">
             <i class="fa-solid fa-arrow-left" onClick={() => setShowNotifications(false)}></i>
             Notifications

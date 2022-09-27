@@ -8,7 +8,7 @@ const SideBar = () => {
       </div>
       <div className='flex-column gap-10 width-100'>
         <div className='nav-title align-left'>ANALYTICS</div>
-        <div className='flex-row gap-15 nav-item-padding light-blue b-radius-12 nav-hover margin-nav-10'>
+        <div className='flex-row gap-15 nav-item-padding light-blue b-radius-12 nav-hover margin-nav-10 pointer'>
           <div className=''>
             <img src='images/dashboard-icon.svg' alt='' />
           </div>
@@ -17,30 +17,30 @@ const SideBar = () => {
       </div>
       <div className='flex-column width-100'>
         <div className='nav-title align-left'>TRANSACTIONS</div>
-        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10'>
+        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10 pointer'>
           <i class='fa-solid fa-paper-plane'></i>
           <div className=''>Transfer</div>
         </div>
-        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10'>
+        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10 pointer'>
           <i class='fa-solid fa-wallet'></i>
           <div className=''>My Wallet</div>
         </div>
-        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10'>
+        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10 pointer'>
           <i class='fa-solid fa-money-bill'></i>
           <div className=''>Payments</div>
         </div>
-        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10'>
+        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10 pointer'>
           <i class='fa-solid fa-note-sticky'></i>
           <div className=''>Transactions</div>
         </div>
       </div>
       <div className='flex-column'>
         <div className='nav-title align-left'>USERS</div>
-        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10'>
+        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10 pointer'>
           <i class='fa-solid fa-user'></i>
           <div className=''>Customers</div>
         </div>
-        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10'>
+        <div className='flex-row gap-15 nav-item-padding b-radius-12 nav-hover margin-nav-10 pointer'>
           <i class='fa-solid fa-file-invoice'></i>
           <div className=''>Invoicing</div>
         </div>

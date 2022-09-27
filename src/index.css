@@ -60,7 +60,7 @@ html {
   color: #15497E;
 }
 
-.nav-links-container .overlay{
+.nav-links-container .overlay,.overlay-dashboard{
   background-color: white;
   height: 90px !important;
   width: 190px;
@@ -2117,7 +2117,6 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   left: 0;
   /* z-index: 1000000; */
   transition: all 0.4s ease-in;
-  opacity: 1;
   width: 0px;
   opacity: 0;
   z-index: -1000000;
@@ -2131,6 +2130,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   opacity: 1;
   z-index:100000;
 }
+
 @media (min-width:1001px) {
   .hide-1001{
     display: none !important;
@@ -2171,7 +2171,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .notifications-overlay{
   padding: 50px;
   gap: 100px;
-  width: 100%;
+  width: 0;
   max-width: 600px;
   height: 100vh;
   position: absolute;
@@ -2183,9 +2183,18 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   height: 100vh;
   overflow-x:hidden;
   overflow-y:auto;
+  transition: all 0.4s ease-in;
 }
 .overflow-hidden{
   overflow: hidden !important;
+}
+.show-notifications-menu {
+  width: 100%;
+  opacity: 1;
+}
+.hide-notifications-nav{
+  opacity: 0;
+  visibility: hidden;
 }
 .bell-notification-icon{
   height: 50px;
@@ -2259,4 +2268,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   position: absolute;
   top: 0;
   left: 0;
+}
+.overlay-dashboard  {
+    box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.876), 0 6px 10px 0rgba(0, 0, 0, 0.876), 0 1px 18px 0 rgba(0, 0, 0, 0.876);
+    border: 1px solid rgba(0, 0, 0, 0.053);
+}
+.overlay-dashboard a{
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  font-size: 15px;
+  color: black;
+  gap: 10px;
 }
