@@ -5,7 +5,7 @@ const DashboardHamburger = ({ showNav, setShowNav, page, setPage }) => {
   const navigate = useNavigate();
   return (
     <div
-      className={`dashboard-nav flex-column nav-font gap-10 nav-responsive ${
+      className={`dashboard-nav flex-column nav-font gap-10 nav-responsive dashboard-hamburger ${
         showNav && "show-nav"
       }`}
     >

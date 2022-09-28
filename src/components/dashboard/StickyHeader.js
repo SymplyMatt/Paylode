@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const StickyHeader = ({
   showNav,
   setShowNav,
@@ -7,6 +8,7 @@ const StickyHeader = ({
   setShowNotifications,
 }) => {
   const [overlay, setOverlay] = useState(false);
+  const navigate = useNavigate();
   return (
     <div className={`flex-row padding-30 main-section-header `}>
       <div className='width-75 flex-row  justify-sb'>
@@ -19,7 +21,10 @@ const StickyHeader = ({
             <div className='red-bg flex-row-center font-x-sm'>1</div>
             <i class='fa-solid fa-bell header-icon'></i>
           </div>
-          <div className='pointer'>
+          <div
+            className='pointer'
+            onClick={() => navigate("/account-settings")}
+          >
             <i class='fa-solid fa-gear header-icon'></i>
           </div>
           <div className='user-avatar hide-1000'>
@@ -29,7 +34,7 @@ const StickyHeader = ({
             className='hover overlay-toggler flex-row gap-10 hide-1000 pointer'
             onMouseEnter={() => setOverlay(true)}
           >
-            Good Morning Matthew <i class='fa-solid fa-angle-down'></i>
+            Good Morning Andrew <i class='fa-solid fa-angle-down'></i>
             <div
               className={`overlay-dashboard ${!overlay && "hide"}`}
               onMouseEnter={() => setOverlay(true)}

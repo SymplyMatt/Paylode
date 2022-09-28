@@ -1,11 +1,12 @@
 import React from "react";
+import DashboardContent from "./DashboardContent";
 import StickyHeader from "./StickyHeader";
 
 const MainContent = ({
   showNav,
   setShowNav,
   showNotifications,
-  setShowNotifications,
+  setShowNotifications,page, setPage
 }) => {
   return (
     <div className='main-section hide-scrollbar height-100'>
@@ -15,7 +16,7 @@ const MainContent = ({
         showNotifications={showNotifications}
         setShowNotifications={setShowNotifications}
       />
-      <div className='main-content'></div>
+      {page == 'dashboard' && <DashboardContent />}
     </div>
   );
 };

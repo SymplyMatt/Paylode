@@ -9,7 +9,7 @@ const StepButton = ({ step, setStep }) => {
       onClick={(e) => {
         e.preventDefault();
         if (step == 1) setStep(2);
-        if (step == 2) navigate("/settings");
+        if (step == 2) navigate("/account-settings");
       }}
     >
       <div className=''>{step == 1 ? "Create my account" : "Proceed"}</div>

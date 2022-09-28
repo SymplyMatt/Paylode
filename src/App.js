@@ -28,7 +28,8 @@ function App() {
           path='/signup'
           element={<SignUp page={page} setPage={setPage} />}
         />
-        <Route path='/settings' element={<AccountSettings />} />
+        <Route path='/accountsettings' element={<AccountSettings />} />
+        <Route path='/account-settings' element={<AccountSettings />} />
         <Route
           path='/dashboard'
           element={
