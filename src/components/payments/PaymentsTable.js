@@ -35,7 +35,7 @@ const PaymentsTable = ({ showOverlay, setShowOverlay }) => {
             className='transaction-menu-icon'
             onClick={() => setShowOverlay(!showOverlay)}
           >
-            <i class='fa-solid fa-ellipsis'></i>
+            <i class='fa-solid fa-ellipsis pointer'></i>
           </div>
         </div>
         <div className='dashboard-grid dashboard-grid-item payments-grid'>
@@ -48,7 +48,7 @@ const PaymentsTable = ({ showOverlay, setShowOverlay }) => {
             className='transaction-menu-icon'
             onClick={() => setShowOverlay(!showOverlay)}
           >
-            <i class='fa-solid fa-ellipsis'></i>
+            <i class='fa-solid fa-ellipsis pointer'></i>
           </div>
         </div>
         <div className='dashboard-grid dashboard-grid-item payments-grid'>
@@ -61,7 +61,7 @@ const PaymentsTable = ({ showOverlay, setShowOverlay }) => {
             className='transaction-menu-icon'
             onClick={() => setShowOverlay(!showOverlay)}
           >
-            <i class='fa-solid fa-ellipsis'></i>
+            <i class='fa-solid fa-ellipsis pointer'></i>
           </div>
         </div>
       </div>
