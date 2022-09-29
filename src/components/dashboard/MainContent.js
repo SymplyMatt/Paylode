@@ -3,6 +3,7 @@ import DashboardContent from "./DashboardContent";
 import StickyHeader from "./StickyHeader";
 import TransferMainContent from "../transfer/TransferMainContent";
 import WalletMainContent from "../wallet/WalletMainContent";
+import TransactionsMainContent from "../transactions/TransactionsMainContent";
 
 const MainContent = ({
   showNav,
@@ -25,6 +26,7 @@ const MainContent = ({
       {page == "dashboard" && <DashboardContent />}
       {page == "transfer" && <TransferMainContent />}
       {page == "wallet" && <WalletMainContent />}
+      {page == "transactions" && <TransactionsMainContent />}
     </div>
   );
 };

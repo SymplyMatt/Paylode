@@ -5,9 +5,13 @@ const TransactionHistory = () => {
     <div className='dashboard-analytics-container flex-column-center gap-20'>
       <div className='transaction-history-flex'>
         <div className='analytics-text'>Transaction History</div>
-        <div className="flex-column align-flex-end transaction-menu-container">
-            <div className="transaction-menu-icon"><i class="fa-solid fa-ellipsis"></i></div>
-            <div className="transaction-menu-overlay"><i class="fa-solid fa-download"></i>&nbsp; Export Transactions</div>
+        <div className='flex-column align-flex-end transaction-menu-container'>
+          <div className='transaction-menu-icon'>
+            <i class='fa-solid fa-ellipsis'></i>
+          </div>
+          <div className='transaction-menu-overlay'>
+            <i class='fa-solid fa-download'></i>&nbsp; Export Transactions
+          </div>
         </div>
       </div>
       <div className='dashboard-graph dashboard-table'>
