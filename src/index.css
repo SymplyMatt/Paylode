@@ -2606,3 +2606,60 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .analytics-overview-items{
   width: 100%;
 }
+
+/* Wallet page */
+.wallet-main-grid{
+  width: 100%;
+  align-items: flex-start;
+  /* justify-content: flex-start; */
+  /* text-align: left; */
+}
+.wallet-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  font-family: Poppins, sans-serif;
+}
+.wallet-grid-top{
+  padding: 2.5em 4em 2em;
+  grid-template-columns: 1fr 1fr;
+  align-items: baseline;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background: #e0e0e023;
+  font-family: Poppins, sans-serif;
+}
+.wallet-grid-bottom{
+  align-items: baseline;
+  padding: 2.5em 4em 2em;
+  background: #e0e0e0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  font-family: Poppins, sans-serif;
+}
+.grid-title-wallet{
+  line-height: 30px;
+  font-size: 12px;
+  color: #a9a5af;
+  letter-spacing: 1px;
+  font-family: Poppins, sans-serif;
+}
+.grid-wallet-amount{
+  display: block;
+  font-size: 34px;
+  color: #000428;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+}
+.grid-wallet-description{
+  line-height: 24px;
+  font-size: 14px;
+  letter-spacing: 0;
+  font-family: Poppins, sans-serif;
+}
+.wallet-grid-account-number{
+  font-size: 18px;
+  color: #000428;
+  font-weight: 700;
+  font-family: Poppins, sans-serif;
+}
