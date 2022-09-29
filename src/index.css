@@ -3225,3 +3225,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .customers-grid{
   grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr 1fr;
 }
+.view-invoice{
+  font-size: 12px;
+  font-weight: 400;
+  color: #15497e;
+  font-family: Poppins, sans-serif;
+}
