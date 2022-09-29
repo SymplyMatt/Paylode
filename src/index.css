@@ -2328,6 +2328,34 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .light-black{
   color: #a9a5af;
 }
+.transaction-history-flex{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+
+}
+.align-flex-end{
+  align-items: flex-end;
+}
+.transaction-menu-icon{
+  color: #a9a5af;
+  font-size: 25px;
+}
+.transaction-menu-container:hover > .transaction-menu-overlay{
+  visibility: visible;
+  opacity: 1;
+}
+.transaction-menu-overlay{
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px -1px rgba(0, 0, 0, 0.876), 0 6px 10px 0rgba(0, 0, 0, 0.876), 0 1px 18px 0 rgba(0, 0, 0, 0.876);
+  border: 1px solid rgba(0, 0, 0, 0.053);
+  visibility: hidden;
+  opacity: 0;
+  font-size: 14px;
+  font-family: Poppins, sans-serif;
+}
 .analytics-text{
   font-size: 18px;
   font-weight: 600;
@@ -2470,6 +2498,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .dashboard-table{
   min-width: 700px;
   overflow: scroll;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  margin-top: -20px;
+}
+@media (max-width:400px) {
+  .transaction-menu-overlay{
+  font-size: 12px;
+}
+.analytics-text{
+  font-size: 16px;
+}
 }
 @media (max-width:1200px) {
 .dashboard-analytics-container {
