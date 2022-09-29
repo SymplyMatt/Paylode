@@ -21,10 +21,7 @@ const StickyHeader = ({
             <div className='red-bg flex-row-center font-x-sm'>1</div>
             <i class='fa-solid fa-bell header-icon'></i>
           </div>
-          <div
-            className='pointer'
-            onClick={() => navigate("/account-settings")}
-          >
+          <div className='pointer' onClick={() => navigate("/settings")}>
             <i class='fa-solid fa-gear header-icon'></i>
           </div>
           <div className='user-avatar hide-1000'>

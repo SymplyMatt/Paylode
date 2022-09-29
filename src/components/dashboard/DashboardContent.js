@@ -23,7 +23,7 @@ const DashboardContent = () => {
       <Chart />
       <div className='dashboard-analytics-container flex-column-center gap-20'>
         <div className='analytics-text'>Transaction History</div>
-        <div className='dashboard-graph'>
+        <div className='dashboard-graph dashboard-table'>
           <div className="dashboard-grid dashboard-grid-heading">
             <div className="">Transaction Reference</div>
             <div className="">Amount</div>

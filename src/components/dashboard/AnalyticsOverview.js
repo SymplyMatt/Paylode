@@ -4,7 +4,7 @@ const AnalyticsOverview = () => {
   return (
     <div className='flex-column-center dashboard-analytics-container gap-20'>
       <div className='analytics-text'>Analytics Overview</div>
-      <div className='flex-row-center gap-15'>
+      <div className='flex-row-center gap-15 analytics-overview-items'>
         <div className='flex-column-center dashnoard-analytics-item gap-15'>
           <div className='dashnoard-analytics-item-header'>TOTAL REVENUE</div>
           <div className='flex-column-center'>
