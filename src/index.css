@@ -3164,11 +3164,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   touch-action: manipulation;
   vertical-align: middle;
   white-space: nowrap;
-  width: 127px;
+  min-width: 127px;
   height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+.payments-btn.brown{
+  background-color: #a9a5af;
 }
 .payments-search{
   display: flex;
@@ -3218,4 +3221,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .payments-menu-overlay {
     right: 120px;
   }
+}
+.customers-grid{
+  grid-template-columns: 1.5fr 1.5fr 1.5fr 1fr 1fr;
 }

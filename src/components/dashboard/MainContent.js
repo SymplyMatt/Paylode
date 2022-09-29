@@ -5,6 +5,7 @@ import TransferMainContent from "../transfer/TransferMainContent";
 import WalletMainContent from "../wallet/WalletMainContent";
 import TransactionsMainContent from "../transactions/TransactionsMainContent";
 import PaymentsMainContent from "../payments/PaymentsMainContent";
+import CustomersMainContent from "../customers/CustomersMainContent";
 
 const MainContent = ({
   showNav,
@@ -29,6 +30,7 @@ const MainContent = ({
       {page == "wallet" && <WalletMainContent />}
       {page == "transactions" && <TransactionsMainContent />}
       {page == "payments" && <PaymentsMainContent />}
+      {page == "customers" && <CustomersMainContent />}
     </div>
   );
 };

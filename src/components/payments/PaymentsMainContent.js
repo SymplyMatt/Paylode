@@ -4,7 +4,7 @@ import PaymentsTable from "./PaymentsTable";
 const PaymentsMainContent = () => {
     const [showOverlay, setShowOverlay] = useState(false);
   return (
-      <div className='main-content flex-column gap-30'>
+    <div className='main-content flex-column gap-30'>
         <div className="payments-top-flex">
             <div className="payments-search">
                 <div className=""><i class="fa-solid fa-magnifying-glass"></i></div>
