@@ -2468,7 +2468,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-family: Poppins, sans-serif;
 }
 .dashboard-table{
-  min-width: 610px;
+  min-width: 700px;
   overflow: scroll;
 }
 @media (max-width:1200px) {
@@ -2523,7 +2523,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 @media (max-width:580px) {
   .dashboard-table{
-    padding-left: 50px;
+    padding-left: 70px;
   }
   .amount{
     font-size: 12px;
@@ -2538,12 +2538,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 @media (max-width:500px) {
   .dashboard-table{
-    padding-left: 100px;
+    padding-left: 120px;
   }
 }
 @media (max-width:400px) {
   .dashboard-table{
-    padding-left: 150px;
+    padding-left: 180px;
   }
 }
 
