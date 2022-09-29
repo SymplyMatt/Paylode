@@ -67,7 +67,8 @@ const StickyHeader = ({
             className='overlay-toggler flex-row gap-10 hide-1001 pointer'
             onClick={() => setShowNav(true)}
           >
-            <i class='fa-solid fa-bars'></i> Menu
+            <i class='fa-solid fa-bars'></i>{" "}
+            <span className='hide-500'>Menu</span>
           </div>
         </div>
       </div>

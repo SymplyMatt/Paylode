@@ -2284,6 +2284,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 .dashboard-hamburger{
   padding-bottom: 50px !important;
+  height: 100vh !important;
 }
 
 /* dashboard main-content */
@@ -2579,6 +2580,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .dashboard-table{
     padding-left: 120px;
   }
+    .hide-500{
+    display: none;
+  }
 }
 @media (max-width:400px) {
   .dashboard-table{
@@ -2662,4 +2666,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   color: #000428;
   font-weight: 700;
   font-family: Poppins, sans-serif;
+}
+@media (max-width:1150px) {
+.grid-wallet-amount{
+  font-size: 25px;
+}
+}
+@media (max-width:800px) {
+  .wallet-grid-top{
+  padding: 2.5em 1em 2em;
+}
+.wallet-grid-bottom{
+  padding: 2.5em 1em 2em;
+}
+}
+@media (max-width:768px) {
+.grid-wallet-amount{
+  font-size: 25px;
+}
+.wallet-grid{
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
 }
