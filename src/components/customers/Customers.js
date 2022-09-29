@@ -26,6 +26,8 @@ const Customers = ({
           setShowNav={setShowNav}
           showNotifications={showNotifications}
           setShowNotifications={setShowNotifications}
+          page={page}
+          setPage={setPage}
         />
         <DashboardHamburger showNav={showNav} setShowNav={setShowNav} />
       </div>

@@ -6,13 +6,31 @@ const StickyHeader = ({
   setShowNav,
   showNotifications,
   setShowNotifications,
+  page,
+  setPage,
 }) => {
   const [overlay, setOverlay] = useState(false);
   const navigate = useNavigate();
   return (
     <div className={`flex-row padding-30 main-section-header `}>
       <div className='width-75 flex-row  justify-sb'>
-        <div className='dashboard-text'>Dashboard</div>
+        <div className='dashboard-text'>
+          {page == "dashboard"
+            ? "Dashboard"
+            : page == "transfer"
+            ? "All Transfers"
+            : page == "wallet"
+            ? "My Wallet Account"
+            : page == "payments"
+            ? "Payment Page"
+            : page == "transactions"
+            ? "All Time Transactions"
+            : page == "customers"
+            ? "All Customers"
+            : page == "invoicing"
+            ? "All Invoicing"
+            : ""}
+        </div>
         <div className='flex-row gap-30'>
           <div
             className='flex-row pointer'
