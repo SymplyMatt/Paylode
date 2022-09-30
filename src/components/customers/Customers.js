@@ -17,6 +17,9 @@ const Customers = ({
     document.title = "Customers";
     setPage("customers");
   });
+  useEffect(() => {
+    setShowNav(false);
+  }, []);
   return (
     <div className={`${showNotifications && "overflow-hidden"}`}>
       <div className={`flex-row width-100 ${showNotifications && "hide-main"}`}>
@@ -29,7 +32,12 @@ const Customers = ({
           page={page}
           setPage={setPage}
         />
-        <DashboardHamburger showNav={showNav} setShowNav={setShowNav} />
+        <DashboardHamburger
+          showNav={showNav}
+          setShowNav={setShowNav}
+          page={page}
+          setPage={setPage}
+        />
       </div>
       <Notifications
         showNotifications={showNotifications}

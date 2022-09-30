@@ -2603,7 +2603,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .dashboard-hamburger {
   padding-bottom: 50px !important;
-  height: 100vh !important;
+  min-height: 100vh !important;
+  overflow: scroll;
+  padding-bottom: 100px
 }
 
 /* dashboard main-content */
@@ -3351,12 +3353,16 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .transfers-right hr{
     width: 100% !important;
   }
+    .m-100 {
+      margin-bottom: 100px;
+    }
 }
 @media (max-width:550px) {
   .transfer-top-flex{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    margin-top: 50px;
   }
   .filter-transfer{
     order: 1;
@@ -3364,5 +3370,11 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .transfer-btns{
     order: 2;
   }
+  .m-100 {
+    margin-bottom: 150px;
+  }
+  .padding-100{
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
 }
-  

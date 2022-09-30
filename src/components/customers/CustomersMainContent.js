@@ -5,7 +5,7 @@ import { useState } from "react";
 const CustomersMain = () => {
   const [showOverlay, setShowOverlay] = useState(false);
   return (
-    <div className='main-content flex-column gap-30'>
+    <div className='main-content flex-column gap-30 padding-100'>
       <div className='payments-top-flex'>
         <div className='payments-search'>
           <div className=''>

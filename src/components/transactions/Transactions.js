@@ -17,6 +17,9 @@ const Transactions = ({
     document.title = "Transactions";
     setPage("transactions");
   });
+  useEffect(() => {
+    setShowNav(false);
+  }, []);
   return (
     <div className={`${showNotifications && "overflow-hidden"}`}>
       <div className={`flex-row width-100 ${showNotifications && "hide-main"}`}>

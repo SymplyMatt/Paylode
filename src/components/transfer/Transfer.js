@@ -14,9 +14,12 @@ const Transfer = ({
   setPage,
 }) => {
   useEffect(() => {
-    document.title = "Transfer";
+    document.title = "All Transfers";
     setPage("transfer");
   });
+  useEffect(() => {
+    setShowNav(false);
+  }, []);
   return (
     <div className={`${showNotifications && "overflow-hidden"}`}>
       <div className={`flex-row width-100 ${showNotifications && "hide-main"}`}>

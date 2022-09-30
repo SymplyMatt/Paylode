@@ -17,6 +17,9 @@ const Wallet = ({
     document.title = "Wallet";
     setPage("wallet");
   });
+  useEffect(() => {
+    setShowNav(false);
+  }, []);
   return (
     <div className={`${showNotifications && "overflow-hidden"}`}>
       <div className={`flex-row width-100 ${showNotifications && "hide-main"}`}>

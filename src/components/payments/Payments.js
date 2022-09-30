@@ -17,6 +17,9 @@ const Payments = ({
     document.title = "Payments";
     setPage("payments");
   });
+  useEffect(() => {
+    setShowNav(false);
+  }, []);
   return (
     <div className={`${showNotifications && "overflow-hidden"}`}>
       <div className={`flex-row width-100 ${showNotifications && "hide-main"}`}>
