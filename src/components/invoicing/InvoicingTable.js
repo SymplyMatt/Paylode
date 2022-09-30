@@ -29,10 +29,7 @@ const InvoicingTable = ({ showOverlay, setShowOverlay }) => {
           <div className='amount'>jerrysonibe@gmail.com</div>
           <div className='amount'> +23490922554201 </div>
           <div className='amount'> June 10, 2021</div>
-          <div
-            className='view-invoice'
-            onClick={() => setShowOverlay(!showOverlay)}
-          >
+          <div className='view-invoice'>
             <i class='fa-solid fa-eye pointer'></i> View Invoice
           </div>
         </div>
@@ -41,10 +38,7 @@ const InvoicingTable = ({ showOverlay, setShowOverlay }) => {
           <div className='amount'>andrewams@gmail.com </div>
           <div className='amount'> +23490379242432</div>
           <div className='amount'> June 10, 2021</div>
-          <div
-            className='view-invoice'
-            onClick={() => setShowOverlay(!showOverlay)}
-          >
+          <div className='view-invoice'>
             <i class='fa-solid fa-eye pointer'></i> View Invoice
           </div>
         </div>
@@ -53,10 +47,7 @@ const InvoicingTable = ({ showOverlay, setShowOverlay }) => {
           <div className='amount'>loisgenesis18@gmail.com </div>
           <div className='amount'> +23490379242432 </div>
           <div className='amount'> June 10, 2021</div>
-          <div
-            className='view-invoice'
-            onClick={() => setShowOverlay(!showOverlay)}
-          >
+          <div className='view-invoice'>
             <i class='fa-solid fa-eye pointer'></i> View Invoice
           </div>
         </div>
