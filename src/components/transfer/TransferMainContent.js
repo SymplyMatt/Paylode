@@ -5,7 +5,7 @@ const TransferMainContent = () => {
     <div className='main-content flex-column gap-30 transfers-grid'>
       <div className=''>
         <div className='flex-row transfer-top-flex'>
-          <div className='flex-row gap-20'>
+          <div className='flex-row gap-20 transfer-btns'>
             <div className='payments-btn'>New Transfer</div>
             <div className='payments-btn brown'>Export CSV</div>
           </div>

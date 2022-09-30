@@ -2945,6 +2945,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .status.declined {
     font-size: 12px;
   }
+    .transfers-table{
+      margin-left: 50px;
+    }
 }
 
 @media (max-width:500px) {
@@ -2957,6 +2960,14 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .hide-500 {
     display: none;
   }
+    .transfers-table {
+      margin-left: 120px;
+    }
+}
+@media (max-width:450px) {
+  .transfers-table {
+      margin-left: 180px;
+    }
 }
 
 @media (max-width:400px) {
@@ -2966,8 +2977,26 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   .dashboard-table.payments-grid-table {
     margin-left: 250px;
   }
+    .transfers-table {
+      margin-left: 200px;
+    }
 }
-
+@media (max-width:380px) {
+  .transfers-table {
+      margin-left: 220px;
+    }
+}
+@media (max-width:350px) {
+  .transfers-table {
+      margin-left: 250px;
+    }
+}
+@media (max-width:320px) {
+  .transfers-table {
+      margin-left: 280px;
+    }
+}
+  
 @media (min-width:1000px) {
   .main-content::-webkit-scrollbar {
     display: none;
@@ -3313,3 +3342,27 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .transfers-right hr{
   opacity: 0.3;
 }
+
+@media (max-width:900px) {
+  .transfers-grid{
+    display: flex;
+    flex-direction: column;
+  }
+  .transfers-right hr{
+    width: 100% !important;
+  }
+}
+@media (max-width:550px) {
+  .transfer-top-flex{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .filter-transfer{
+    order: 1;
+  }
+  .transfer-btns{
+    order: 2;
+  }
+}
+  
