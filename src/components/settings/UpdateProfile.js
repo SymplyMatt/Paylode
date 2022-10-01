@@ -11,7 +11,7 @@ const UpdateProfile = () => {
           <i class='fa-solid fa-arrow-left pointer'></i><span>Back</span>
         </div>
         <div className="">
-            <div className='flex-column-center gap-10 settings-header'>
+            <div className='flex-column-center gap-10 settings-header update-profile'>
                 <div className='settings-title'>Customize Settings</div>
                 <div className='settings-header-desc'>Personalize settings to suit your company</div>
                 <div className=''><hr /></div>

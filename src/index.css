@@ -3484,3 +3484,12 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .update-profile{
   min-width: 0px !important;
 }
+@media (max-width:500px) {
+  .settings-container .input-flex{
+    display: flex;
+    flex-direction: column;
+  }
+  .settings-header{
+    margin-bottom: 50px !important;
+  }
+}
