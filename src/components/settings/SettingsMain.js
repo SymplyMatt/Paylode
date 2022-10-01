@@ -53,7 +53,10 @@ const SettingsMain = ({
         </div>
         <hr />
       </div>
-      <div className='flex-column gap-30 item-container'>
+      <div
+        className='flex-column gap-30 item-container'
+        onClick={() => setSettingsPage("api-key")}
+      >
         <div className='flex-row justify-sb gap-30 pointer'>
           <div className='flex-column gap-10'>
             <div className='item-title'>Api Key & Webhooks</div>
@@ -70,7 +73,10 @@ const SettingsMain = ({
       </div>
       <div className='flex-column gap-30 item-container'>
         <div className='flex-row justify-sb gap-30 pointer'>
-          <div className='flex-column gap-10'>
+          <div
+            className='flex-column gap-10'
+            onClick={() => setSettingsPage("preferences")}
+          >
             <div className='item-title'>Preferences</div>
             <div className='item-desc'>
               Update your bank account informations here delete or add new
