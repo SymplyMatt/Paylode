@@ -3493,3 +3493,43 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     margin-bottom: 50px !important;
   }
 }
+
+
+.account-table-container{
+  min-width: 600px;
+  width: 100%;
+  background-color: white;
+}
+.account-table{
+  display: grid;
+  grid-template-columns: 1fr 2fr 3fr 1fr;
+  justify-content: center;
+  width: 100% !important;
+  min-width: 600px;
+  align-items: center;
+  z-index: 10000;
+  background-color: white;
+}
+.account-table{
+  line-height: 17px;
+  letter-spacing: .0115em;
+  vertical-align: middle;
+  padding: 1.2rem 15px;
+  font-size: 12px;
+  color: #000428;
+  margin: auto;
+  overflow: auto;
+
+}
+.account-table.heading {
+  text-transform: uppercase;
+  background: #f4f5f6;
+  font-weight: 700;
+  border-radius: 10px;
+}
+.settings-container.bank-account{
+  padding: 1.5em 10%;
+}
+.active{
+  color: #3ab75d;
+}

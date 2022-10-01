@@ -35,7 +35,10 @@ const SettingsMain = ({
         </div>
         <hr />
       </div>
-      <div className='flex-column gap-30 item-container'>
+      <div
+        className='flex-column gap-30 item-container'
+        onClick={() => setSettingsPage("bank-account")}
+      >
         <div className='flex-row justify-sb gap-30 pointer'>
           <div className='flex-column gap-10'>
             <div className='item-title'>Bank Account</div>

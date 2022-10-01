@@ -3,11 +3,11 @@ import ReactFlagsSelect from "react-flags-select";
 import { useState } from "react";
 import { useEffect } from "react";
 
-const UpdateProfile = () => {
+const BankAccount = ({settingsPage,setSettingsPage}) => {
     const [selected, setSelected] = useState("NG");
     return (
     <div className="settings-container">
-        <div className="back-icon-container">
+        <div className="back-icon-container pointer" onClick={()=>setSettingsPage('main')}>
           <i class='fa-solid fa-arrow-left pointer'></i><span>Back</span>
         </div>
         <div className="">
@@ -49,4 +49,4 @@ const UpdateProfile = () => {
     )
 };
 
-export default UpdateProfile;
+export default BankAccount;
