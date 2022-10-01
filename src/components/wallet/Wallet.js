@@ -14,7 +14,7 @@ const Wallet = ({
   setPage,
 }) => {
   useEffect(() => {
-    document.title = "Wallet";
+    document.title = "My Wallet Account";
     setPage("wallet");
   });
   useEffect(() => {

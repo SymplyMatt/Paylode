@@ -14,7 +14,7 @@ const Invoicing = ({
   setPage,
 }) => {
   useEffect(() => {
-    document.title = "Invoicing";
+    document.title = "All Invoicing";
     setPage("invoicing");
   });
   useEffect(() => {

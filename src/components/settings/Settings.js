@@ -5,7 +5,7 @@ import MainContent from "../dashboard/MainContent";
 import Notifications from "../dashboard/Notifications";
 import { useEffect } from "react";
 
-const Payments = ({
+const Settings = ({
   showNav,
   setShowNav,
   showNotifications,
@@ -14,8 +14,8 @@ const Payments = ({
   setPage,
 }) => {
   useEffect(() => {
-    document.title = "Payment Page";
-    setPage("payments");
+    document.title = "Settings";
+    setPage("settings");
   });
   useEffect(() => {
     setShowNav(false);
@@ -47,4 +47,4 @@ const Payments = ({
   );
 };
 
-export default Payments;
+export default Settings;

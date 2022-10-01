@@ -29,6 +29,8 @@ const StickyHeader = ({
             ? "All Customers"
             : page == "invoicing"
             ? "All Invoicing"
+            : page == "settings"
+            ? "Settings"
             : ""}
         </div>
         <div className='flex-row gap-30'>

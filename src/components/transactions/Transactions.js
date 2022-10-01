@@ -14,7 +14,7 @@ const Transactions = ({
   setPage,
 }) => {
   useEffect(() => {
-    document.title = "Transactions";
+    document.title = "All Time Transactions";
     setPage("transactions");
   });
   useEffect(() => {

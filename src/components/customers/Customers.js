@@ -14,7 +14,7 @@ const Customers = ({
   setPage,
 }) => {
   useEffect(() => {
-    document.title = "Customers";
+    document.title = "All Customers";
     setPage("customers");
   });
   useEffect(() => {

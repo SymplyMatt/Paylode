@@ -3378,3 +3378,66 @@ input[type="date"]::-webkit-calendar-picker-indicator {
     padding-bottom: 100px;
   }
 }
+
+
+/* Settings */
+/* .settings.dashboard-analytics-container {
+} */
+.settings-container{
+  background: white;
+  width: 90%;
+  padding: 1.5em 15%;
+  border-radius: 20px;
+  font-family: Poppins, sans-serif;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.settings-container .justify-sb{
+  width: 100%;
+}
+.settings-header{
+  margin-bottom: 80px;
+}
+.settings-title{
+  color: #000428;
+  font-weight: 600;
+  font-size: 20px;
+  text-align: center;
+}
+.settings-header-desc{
+  display: block;
+  font-size: 14px;
+  color: #a9a5af;
+  /* margin-top: 10px; */
+}
+.settings-header hr{
+  width: 98px;
+  display: block;
+  background-color:  #3ab75d;
+  color:  #3ab75d;
+  opacity: 0.8;
+}
+.settings-container .item-title{
+  color: #000428;
+  font-weight: 400;
+  font-size: 16px;
+}
+.item-desc{
+  display: block;
+  color: #a9a5af;
+  font-size: 12px;
+}
+.settings-container .item-container hr{
+  width: 100%;
+  color: #a9a5af;
+  background-color: #a9a5af;
+  opacity: 0.2;
+}
+.settings-container .item-container i{
+  color: #a9a5af;
+  font-size: 20px;
+}
+.fa-toggle-on{
+  color: #ff4081 !important;
+}

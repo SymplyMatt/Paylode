@@ -11,6 +11,7 @@ import Payments from "./components/payments/Payments";
 import Transactions from "./components/transactions/Transactions";
 import Invoicing from "./components/invoicing/Invoicing";
 import Customers from "./components/customers/Customers";
+import Settings from "./components/settings/Settings";
 
 function App() {
   const [page, setPage] = useState();
@@ -112,6 +113,19 @@ function App() {
           path='/invoicing'
           element={
             <Invoicing
+              showNav={showNav}
+              setShowNav={setShowNav}
+              showNotifications={showNotifications}
+              setShowNotifications={setShowNotifications}
+              page={page}
+              setPage={setPage}
+            />
+          }
+        />
+        <Route
+          path='/settings'
+          element={
+            <Settings
               showNav={showNav}
               setShowNav={setShowNav}
               showNotifications={showNotifications}
