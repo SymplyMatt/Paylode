@@ -3409,6 +3409,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 14px;
   color: #a9a5af;
   text-align: center;
+  font-weight: 700;
 }
 .settings-header hr{
   width: 98px;
@@ -3453,4 +3454,33 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   font-size: 12px;
 }
 }
-  
+
+.input-settings{
+  background: inherit;
+}
+.menu-flags-button {
+  border: none !important;
+}
+.back-icon-container{
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.back-icon-container i{
+  font-size: 24px;
+  color: #a9a5af;
+}
+.back-icon-container  span{
+  color: #000428;
+  font-size: 15px;
+}
+.payments-btn.align-left{
+  max-width: 150px;
+  align-self: flex-end;
+}
+.input-flex > div{
+  width: 50%;
+}
+.update-profile{
+  min-width: 0px !important;
+}
