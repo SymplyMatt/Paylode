@@ -3381,8 +3381,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 
 /* Settings */
-/* .settings.dashboard-analytics-container {
-} */
+
 .settings-container{
   background: white;
   width: 90%;
@@ -3409,7 +3408,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   display: block;
   font-size: 14px;
   color: #a9a5af;
-  /* margin-top: 10px; */
+  text-align: center;
 }
 .settings-header hr{
   width: 98px;
@@ -3441,3 +3440,17 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .fa-toggle-on{
   color: #ff4081 !important;
 }
+
+@media (max-width:600px) {
+.settings-container{
+  width: 100%;
+  padding: 1.5em 20px;
+}
+  .dashboard-analytics-container.settings {
+  padding: 2em 10px;
+  }
+.settings-header-desc {
+  font-size: 12px;
+}
+}
+  
